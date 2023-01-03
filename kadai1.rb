@@ -1,18 +1,22 @@
 class Menu
- attr_accessor :name
- attr_accessor :price
+  attr_accessor :name
+  attr_accessor :price
   # get_total_priceメソッドを定義してください
+  def printMenu(count)
+    total_price = count * self.price
+    if count >= 3
+      total_price = total_price - 10000
+    end
+    "#{self.name} #{total_price}vnd"
+  end
 
-
-
-  
-   return "#{self.name} #{total_price}vnd"
- end
 end
 
 menu1 = Menu.new
 menu1.name = "Phở"
 menu1.price = 30000
+
+puts menu1.printMenu(3)
 
 # menu1に対してget_total_priceメソッドを呼び出してください
 
