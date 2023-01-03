@@ -24,10 +24,10 @@ end
 bingo = Bingo.new
 
 puts "B\t|\tI\t|\tN\t|\tG\t|\tO"
-for i in 1..5
-  if(i!=3)
-    puts "#{bingo.B[i-1]}\t|\t#{bingo.I[i-1]}\t|\t#{bingo.N[i-1]}\t|\t#{bingo.G[i-1]}\t|\t#{bingo.O[i-1]}"
+5.times do |i|
+  if(i!=2)
+    puts "#{bingo.B[i]}\t|\t#{bingo.I[i]}\t|\t#{bingo.N[i]}\t|\t#{bingo.G[i]}\t|\t#{bingo.O[i-1]}"
   else
-    puts "#{bingo.B[i-1]}\t|\t#{bingo.I[i-1]}\t|\t \t|\t#{bingo.G[i-1]}\t|\t#{bingo.O[i-1]}"
+    puts "#{bingo.B[i]}\t|\t#{bingo.I[i]}\t|\t \t|\t#{bingo.G[i]}\t|\t#{bingo.O[i]}"
   end
 end
